@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>ShoppingCart</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <display-name>Shopping Cart</display-name>
+  <description>
+    Simple Shopping Cart
+  </description>
+  <servlet>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>com.ecommerce.CartController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+    <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>photoServlet</servlet-name>
+    <servlet-class>com.ecommerce.photoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>photoServlet</servlet-name>
+    <url-pattern>/photoServlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.ecommerce.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginAuthenticate</servlet-name>
+    <servlet-class>com.ecommerce.LoginAuthenticate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAuthenticate</servlet-name>
+    <url-pattern>/LoginAuthenticate/*</url-pattern>
+  </servlet-mapping>
+</web-app>
